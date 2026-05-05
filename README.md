@@ -13,7 +13,7 @@ O projeto simula uma loja virtual especializada em baterias e pratos, focando em
 
 ## 🔗 Link para o Site
 Você pode visualizar o projeto em funcionamento aqui: 
-> [Clique aqui para abrir o site](https://github.com/ErickDolfini/drum_shopping_dolfini.git)
+> [Clique aqui para abrir o site]( https://erickdolfini.github.io/drum_shopping_dolfini/)
 
 ---
 💡 *Projeto desenvolvido por Erick Dolfini durante o curso de Análise e Desenvolvimento de Sistemas (ADS).*
