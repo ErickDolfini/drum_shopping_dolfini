@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum Store - Dark Edition</title>
+    <!-- Conexão com o CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div>⚙ SUPORTE TÉCNICO &nbsp; | &nbsp; ✓ QUALIDADE GARANTIDA</div>
+        <div>LOJA OFICIAL &nbsp; 🇧🇷 BR</div>
+    </div>
+
+    <header>
+        <a href="index.html" class="logo">drum<span>·</span>store</a>
+    </header>
+
+    <!-- 1. VISÃO CATEGORIAS -->
+    <main id="view-categories" class="main-container">
+        <h2 class="title">CATEGORIAS</h2>
+        <div class="grid">
+            <a href="?cat=caixa" target="_blank" class="item-card">
+                <div class="display-image" style="background-image: url('img/acro.png');"></div>
+                <strong>CAIXAS</strong>
+            </a>
+            <a href="?cat=bateria" target="_blank" class="item-card">
+                <div class="display-image" style="background-image: url('img/bateria\ DW.png');"></div>
+                <strong>BATERIAS</strong>
+            </a>
+            <a href="?cat=prato" target="_blank" class="item-card">
+                <div class="display-image" style="background-image: url('img/prato\ zildjian.png');"></div>
+                <strong>PRATOS</strong>
+            </a>
+        </div>
+    </main>
+
+    <!-- 2. VISÃO CATÁLOGO -->
+    <main id="view-catalog" class="main-container hidden">
+        <h2 id="catalog-title" class="title">CATÁLOGO</h2>
+        <div id="catalog-grid" class="grid"></div>
+        <div style="text-align: center; margin-top: 30px;">
+            <button onclick="window.close();" class="btn" style="background: #000; border: 1px solid #333;">← VOLTAR ÀS CATEGORIAS</button>
+        </div>
+    </main>
+
+    <!-- 3. VISÃO PAGAMENTO -->
+    <main id="view-checkout" class="main-container hidden">
+        <h2 class="title">FINALIZAR COMPRA</h2>
+        <div class="payment-form">
+            <div id="order-summary" class="summary-box"></div>
+            
+            <label>Nome no Cartão</label>
+            <input type="text" placeholder="Como impresso no cartão">
+            
+            <label>Número do Cartão</label>
+            <input type="text" placeholder="0000 0000 0000 0000">
+            
+            <div style="display:flex; gap:10px;">
+                <div style="flex:1">
+                    <label>Validade</label>
+                    <input type="text" placeholder="MM/AA">
+                </div>
+                <div style="flex:1">
+                    <label>CVV</label>
+                    <input type="text" placeholder="123">
+                </div>
+            </div>
+
+            <button id="btn-confirm-pay" class="btn btn-pay">CONFIRMAR PAGAMENTO</button>
+            <button onclick="window.close();" class="btn btn-outline">← VOLTAR AO INÍCIO</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>Desenvolvido para Projeto Acadêmico ADS &copy; 2026</p>
+    </footer>
+
+    <!-- Conexão com o JS externo -->
+    <script src="script.js"></script>
+</body>
+</html>
